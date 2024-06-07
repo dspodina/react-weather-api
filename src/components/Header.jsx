@@ -28,7 +28,7 @@ const Header = ({ title }) => {
             fontWeight: "bold",
             textAlign: "center",
             letterSpacing: "3px",
-            fontSize: "1.5rem",
+            fontSize: "1.3rem",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
