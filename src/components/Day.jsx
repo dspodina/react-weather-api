@@ -16,7 +16,7 @@ const Day = ({ monthAndDate, dayWeather }) => {
       >
         <Typography
           variant="h5"
-          sx={{ marginBottom: 2, marginTop: "10px", fontWeight: "bold" }}
+          sx={{ marginBottom: 2, marginTop: "10px", fontWeight: "bold", fontSize: "1.7rem",}}
         >
           {monthAndDate}
         </Typography>

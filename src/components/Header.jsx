@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { TiWeatherPartlySunny } from "react-icons/ti";
 
 const Header = ({ title }) => {
   return (
@@ -9,13 +10,16 @@ const Header = ({ title }) => {
       position="fixed"
       sx={{
         width: "100%",
-        backgroundColor: "#0B3954",
-        padding: "20px",
+        backgroundColor: "rgba(14, 76, 108, 0.9)",
+        padding: "10px 20px",
+        boxShadow: "none",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
+        backdropFilter: "blur(10px)",
       }}
     >
-      <Toolbar variant="dense">
+      <Toolbar>
         <Typography
-          variant="h6"
+          variant="h4"
           color="inherit"
           component="div"
           sx={{
@@ -23,10 +27,20 @@ const Header = ({ title }) => {
             textTransform: "uppercase",
             fontWeight: "bold",
             textAlign: "center",
-            letterSpacing: "1px",
+            letterSpacing: "3px",
+            fontSize: "1.5rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           {title}
+          <TiWeatherPartlySunny
+            style={{
+              marginLeft: "10px",
+              fontSize: "2.5rem",
+            }}
+          />
         </Typography>
       </Toolbar>
     </AppBar>

@@ -5,6 +5,11 @@
 }
 
 body {
-  background-color: #f0f9ff;
+  background: rgb(50, 135, 180);
+  background: linear-gradient(
+    184deg,
+    rgba(50, 135, 180, 1) 13%,
+    rgba(225, 243, 253, 1) 100%,
+    rgba(60, 193, 244, 1) 100%
+  );
 }
-
